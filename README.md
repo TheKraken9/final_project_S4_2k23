@@ -7,8 +7,8 @@ You can click here : [http://finalproject-2663-1920-1463.000.pe](http://finalpro
 Movie List
 
 ## Collaborators
-- [Fenitra]() - ETU002663
 - [Leslie]() - ETU001920
+- [Fenitra]() - ETU002663
 - [Maminiaina]() - ETU001463
 
 ## ToDoList
