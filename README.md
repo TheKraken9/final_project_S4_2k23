@@ -1,7 +1,7 @@
 # Final_Project_S4_2023
 
 ## Web Site
-[You could click here http://finalproject-2663-1920-1463.000.pe](http://finalproject-2663-1920-1463.000.pe/?i=1)
+You can click here : [http://finalproject-2663-1920-1463.000.pe](http://finalproject-2663-1920-1463.000.pe/?i=1)
 
 ## Project Title
 Movie List
@@ -10,6 +10,9 @@ Movie List
 - [Fenitra]() - ETU002663
 - [Leslie]() - ETU001920
 - [Maminiaina]() - ETU001463
+
+## ToDoList
+You can click here : [https://docs.google.com/spreadsheets/d/194ekjBU5iCNGg0fHti-Yq0P8Z9itFSl9NjQWb1vvCWc/edit?usp=sharing](https://docs.google.com/spreadsheets/d/194ekjBU5iCNGg0fHti-Yq0P8Z9itFSl9NjQWb1vvCWc/edit?usp=sharing)
 
 ## Project Description
 This project is a simple web application that allows users to create, read, update, and delete (CRUD) a list of their favorite movies. The application is built using the Flask framework and is deployed on Heroku. The application uses a PostgreSQL database to store the movie information. The application also uses the OMDB API to retrieve movie information and the Flask-Login extension to manage user sessions.
