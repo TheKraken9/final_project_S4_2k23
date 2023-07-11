@@ -2,11 +2,15 @@
 
 ## Table of Contents
 
+### Collaborators
+- [Leslie - ETU001920]()
+- [Fenitra - ETU002663]()
+- [Maminiaina - ETU001463]()
+
 <h1>Website</h1>
 Click below to check out the website.
 
-[![N|Solid](preview.jpg)](https://bootstrapdash.com/demo/skydash-free/template/)
-
+[http://finalproject-2663-1920-1463.000.pe/](http://finalproject-2663-1920-1463.000.pe/)
 
 #### Stacks used:
 
@@ -16,13 +20,9 @@ Click below to check out the website.
   
 - jQuery
   
-- Gulp
-  
 - Chart.js
-  
-- Google Maps
-  
-- Perfect Scrollbar
+
+- Calendar.js
 
 - Sass
 
@@ -32,7 +32,7 @@ Click below to check out the website.
 
 - PHP Codeigniter 3
 
-- PostgreSQL
+- MaraiaDB
 
 
 
