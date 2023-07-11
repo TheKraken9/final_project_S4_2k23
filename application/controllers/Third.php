@@ -2,6 +2,13 @@
 
 class Third extends CI_Controller
 {
+
+    public function __construct()
+    {
+        parent::__construct();
+        session_start();
+    }
+
     public function index()
     {
         $this->load->view('pages/charts/chartjs');
@@ -45,9 +52,23 @@ class Third extends CI_Controller
     public function confirmer()
     {
         $id = $this->input->get('id');
+        $id_user = $this->input->get('user');
         $this->load->model('M_cm');
-        $this->M_cm->confirmer($id);
-        redirect('/index.php/Third/cm_demande');
+        $this->load->model('M_user');
+        $result = $this->M_cm->verifier_existance($id);
+        $credit = $result[0]->credit;
+        $res = $this->M_cm->est_libre($credit);
+        if(empty($res))
+        {
+            $this->M_cm->confirmer($id);
+            $tarif = $this->M_cm->get_tarif($credit);
+            $this->M_user->ajouter_tarif($tarif[0]->tarif, $id_user);
+            redirect('/index.php/Third/cm_demande');
+        }
+        else
+        {
+            redirect('/index.php/Third/cm_demande');
+        }
     }
 
     public function refuser()
@@ -84,5 +105,18 @@ class Third extends CI_Controller
         );
         $this->M_cm->confirmer_modification($id, $data);
         redirect('/index.php/Third/cm_liste');
+    }
+
+    public function inserer_request()
+    {
+        $this->load->model('M_cm');
+        $session = $_SESSION['logged_in'];
+        $id = $session['id'];
+        $data = array(
+            'user_id' => $id,
+            'credit' => $this->input->post('code')
+        );
+        $this->M_cm->check_exist($data);
+        redirect('/index.php/Welcome/frontoffice');
     }
 }

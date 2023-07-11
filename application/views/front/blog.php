@@ -78,18 +78,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<ul class="main-menu">
 							<li>
 								<a href="<?= site_url("/index.php/Welcome/frontoffice"); ?>">Home</a>
-								<ul class="sub-menu">
-									<li><a href="index.php">Homepage 1</a></li>
-									<li><a href="home-02.php">Homepage 2</a></li>
-									<li><a href="home-03.php">Homepage 3</a></li>
-								</ul>
 							</li>
 
                             <li>
                                 <a href="<?= site_url("/index.php/Welcome/product"); ?>">Shop</a>
                             </li>
 
-                            <li class="label1" data-label1="hot">
+                            <li>
                                 <a href="<?= site_url("/index.php/Welcome/shoping_cart"); ?>">Features</a>
                             </li>
 
@@ -114,11 +109,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
-							<i class="zmdi zmdi-shopping-cart"></i>
+							<i class="zmdi zmdi-account-o"></i>
 						</div>
 
 						<a href="#" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
-							<i class="zmdi zmdi-favorite-outline"></i>
+							<i class="zmdi zmdi-power"></i>
 						</a>
 					</div>
 				</nav>
@@ -139,11 +134,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="2">
-					<i class="zmdi zmdi-shopping-cart"></i>
+					<i class="zmdi zmdi-account-o"></i>
 				</div>
 
 				<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="0">
-					<i class="zmdi zmdi-favorite-outline"></i>
+					<i class="zmdi zmdi-power"></i>
 				</a>
 			</div>
 

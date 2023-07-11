@@ -77,32 +77,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="<?= site_url("/index.php/Welcome/frontoffice"); ?>">Home</a>
-								<ul class="sub-menu">
-									<li><a href="index.php">Homepage 1</a></li>
-									<li><a href="home-02.php">Homepage 2</a></li>
-									<li><a href="home-03.php">Homepage 3</a></li>
-								</ul>
+								<a href="<?= site_url("/index.php/Welcome/frontoffice"); ?>">Accueil</a>
 							</li>
 
                             <li>
-                                <a href="<?= site_url("/index.php/Welcome/product"); ?>">Shop</a>
-                            </li>
-
-                            <li class="label1" data-label1="hot">
-                                <a href="<?= site_url("/index.php/Welcome/shoping_cart"); ?>">Features</a>
+                                <a href="<?= site_url("/index.php/Welcome/product"); ?>">Plan de régime</a>
                             </li>
 
                             <li>
-                                <a href="<?= site_url("/index.php/Welcome/blog"); ?>">Blog</a>
+                                <a href="<?= site_url("/index.php/Welcome/shoping_cart"); ?>">Déposer</a>
                             </li>
 
                             <li>
-                                <a href="<?= site_url("/index.php/Welcome/about"); ?>">About</a>
+                                <a href="<?= site_url("/index.php/Welcome/about"); ?>">A propos</a>
                             </li>
 
                             <li>
-                                <a href="<?= site_url("/index.php/Welcome/contact"); ?>">Contact</a>
+                                <a href="<?= site_url("/index.php/Welcome/contact"); ?>">Contacter</a>
                             </li>
 						</ul>
 					</div>	
@@ -113,13 +104,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<i class="zmdi zmdi-search"></i>
 						</div>
 
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
-							<i class="zmdi zmdi-shopping-cart"></i>
-						</div>
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart">
+                            <i class="zmdi zmdi-account-o"></i>
+                        </div>
 
-						<a href="#" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
-							<i class="zmdi zmdi-favorite-outline"></i>
-						</a>
+                        <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11" >
+                            <i class="zmdi zmdi-power"></i>
+                        </a>
 					</div>
 				</nav>
 			</div>	
@@ -139,11 +130,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="2">
-					<i class="zmdi zmdi-shopping-cart"></i>
+					<i class="zmdi zmdi-account-o"></i>
 				</div>
 
 				<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="0">
-					<i class="zmdi zmdi-favorite-outline"></i>
+					<i class="zmdi zmdi-power"></i>
 				</a>
 			</div>
 
@@ -155,71 +146,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 
-
-		<!-- Menu Mobile -->
-		<div class="menu-mobile">
-			<ul class="topbar-mobile">
-				<li>
-					<div class="left-top-bar">
-						Free shipping for standard order over $100
-					</div>
-				</li>
-
-				<li>
-					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Help & FAQs
-						</a>
-
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							My Account
-						</a>
-
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							EN
-						</a>
-
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							USD
-						</a>
-					</div>
-				</li>
-			</ul>
-
-			<ul class="main-menu-m">
-				<li>
-					<a href="<?= site_url("/index.php/Welcome/frontoffice"); ?>">Home</a>
-					<ul class="sub-menu-m">
-						<li><a href="index.php">Homepage 1</a></li>
-						<li><a href="home-02.php">Homepage 2</a></li>
-						<li><a href="home-03.php">Homepage 3</a></li>
-					</ul>
-					<span class="arrow-main-menu-m">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</span>
-				</li>
-
-                <li>
-                    <a href="<?= site_url("/index.php/Welcome/product"); ?>">Shop</a>
-                </li>
-
-                <li class="label1" data-label1="hot">
-                    <a href="<?= site_url("/index.php/Welcome/shoping_cart"); ?>">Features</a>
-                </li>
-
-                <li>
-                    <a href="<?= site_url("/index.php/Welcome/blog"); ?>">Blog</a>
-                </li>
-
-                <li>
-                    <a href="<?= site_url("/index.php/Welcome/about"); ?>">About</a>
-                </li>
-
-                <li>
-                    <a href="<?= site_url("/index.php/Welcome/contact"); ?>">Contact</a>
-                </li>
-			</ul>
-		</div>
 
 		<!-- Modal Search -->
 		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">

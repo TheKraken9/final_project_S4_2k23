@@ -57,11 +57,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<ul class="main-menu">
 							<li>
 								<a href="index.php">Home</a>
-								<ul class="sub-menu">
-									<li><a href="index.php">Homepage 1</a></li>
-									<li><a href="home-02.php">Homepage 2</a></li>
-									<li><a href="home-03.html">Homepage 3</a></li>
-								</ul>
 							</li>
 
 							<li>
@@ -90,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="wrap-icon-header flex-w flex-r-m h-full">							
 						<div class="flex-c-m h-full p-r-25 bor6">
 							<div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
-								<i class="zmdi zmdi-shopping-cart"></i>
+								<i class="zmdi zmdi-account-o"></i>
 							</div>
 						</div>
 							

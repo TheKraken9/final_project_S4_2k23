@@ -40,4 +40,11 @@ class M_activite_sportive extends CI_Model
         $this->db->where('id', $id);
         $this->db->update('activite_sportive', $data);
     }
+
+    public function generer_activite_sportive($type)
+    {
+        $sql = "select * from activite_sportive where type = '$type'";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
 }

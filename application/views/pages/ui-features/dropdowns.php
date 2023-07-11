@@ -418,6 +418,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <tr>
                                             <th>No</th>
                                             <th>Nom</th>
+                                            <th class="text-center">Apports</th>
+                                            <th>Quantité</th>
+                                            <th>Durée(500g)</th>
                                             <th>Prix</th>
                                             <th>Type</th>
                                             <th>Actions</th>
@@ -428,6 +431,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <tr>
                                             <td><?= $item->id ?></td>
                                             <td><?= $item->name ?></td>
+                                            <td><?= $item->lipide ?>% Viandes - <?= $item->glucide ?>% Poissons - <?= $item->protide ?>% Volaille</td>
+                                            <td><?= $item->quantite ?></td>
+                                            <td><?= $item->duree ?> Jours</td>
                                             <td><?= $item->price ?></td>
                                             <td class="text-success">
                                                 <?php if($item->type == "Perdre du poids"){ ?>

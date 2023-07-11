@@ -2,6 +2,14 @@
 
 class First extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->helper('url'); // load helper url
+        $this->load->helper('form'); // load helper form
+        session_start();
+    }
+
     public function index()
     {
         $this->load->view('pages/ui-features/buttons');
@@ -29,7 +37,11 @@ class First extends CI_Controller
             'name' => $this->input->post('nom'),
             'price' => $this->input->post('prix'),
             'type' => $this->input->post('type'),
-            'category' => $this->input->post('categorie')
+            'quantite' => $this->input->post('quantite'),
+            'lipide' => $this->input->post('lipide'),
+            'glucide' => $this->input->post('glucide'),
+            'protide' => $this->input->post('protide'),
+            'duree' => $this->input->post('duree')
         );
         $this->M_regime->inserer_regime($data);
         redirect('/index.php/First/liste_aliment');
@@ -66,7 +78,11 @@ class First extends CI_Controller
             'name' => $this->input->post('nom'),
             'price' => $this->input->post('prix'),
             'type' => $this->input->post('type'),
-            'category' => $this->input->post('categorie')
+            'quantite' => $this->input->post('quantite'),
+            'lipide' => $this->input->post('lipide'),
+            'glucide' => $this->input->post('glucide'),
+            'protide' => $this->input->post('protide'),
+            'duree' => $this->input->post('duree')
         );
         $this->M_regime->modifier_aliment($id, $data);
         redirect('/index.php/First/liste_aliment');

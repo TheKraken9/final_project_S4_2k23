@@ -426,7 +426,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <?php foreach ($cm as $item): ?>
                                             <tr>
                                                 <td><?= $item->id ?></td>
-                                                <td><?= $item->credit ?></td>
+                                                <td><?= $item->credit ?><sup class="text-secondary fs-1"><?= substr($item->credit,0,2) == '11' ? " Premium" : " Basic"; ?></sup></sup></td>
                                                 <td><?= $item->tarif ?> Ar</td>
                                                 <td><label class="badge badge-warning"><a href="<?= site_url("/index.php/Third/modifier?id=") ?><?= $item->id ?>" class="text-white">Modifier</a></label><label class="badge badge-danger m-2"><a href="<?= site_url("/index.php/Third/supprimer?id=") ?><?= $item->id ?>" class="text-white">Supprimer</a></label></td>
                                             </tr>

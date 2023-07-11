@@ -428,7 +428,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <tr>
                                                 <td><?= $item->id ?></td>
                                                 <td><?= $item->user ?></td>
-                                                <td><?= $item->credit ?></td>
+                                                <td><?= $item->credit ?><sup class="text-secondary fs-1"><?= substr($item->credit,0,2) == '11' ? " Premium" : " Basic"; ?></sup></td>
                                                 <?php if ($item->state == 0): ?>
                                                     <td><label class="badge badge-info">En attente</label></td>
                                                 <?php elseif ($item->state == 1): ?>
@@ -436,7 +436,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <?php else: ?>
                                                     <td><label class="badge badge-danger">Refusée</label></td>
                                                 <?php endif; ?>
-                                                <td><label class="badge badge-success"><a href="<?= site_url("/index.php/Third/confirmer?id="); ?><?= $item->id ?>" class="text-white">Confirmer</a></label><label class="badge badge-danger m-2"><a href="<?= site_url("/index.php/Third/refuser?id=") ?><?= $item->id ?>" class="text-white">Refuser</a></label></td>
+                                                <td><label class="badge badge-success"><a href="<?= site_url("/index.php/Third/confirmer?id="); ?><?= $item->id ?>&user=<?= $item->id_user ?>"  class="text-white">Confirmer</a></label><label class="badge badge-danger m-2"><a href="<?= site_url("/index.php/Third/refuser?id=") ?><?= $item->id ?>" class="text-white">Refuser</a></label></td>
                                             </tr>
                                         <?php endforeach; ?>
                                         </tbody>

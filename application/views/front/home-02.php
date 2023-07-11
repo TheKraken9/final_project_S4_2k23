@@ -96,7 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							
 						<div class="flex-c-m h-full p-l-18 p-r-25 bor5">
 							<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
-								<i class="zmdi zmdi-shopping-cart"></i>
+								<i class="zmdi zmdi-account-o"></i>
 							</div>
 						</div>
 							

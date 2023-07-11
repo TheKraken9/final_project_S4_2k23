@@ -406,7 +406,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="main-panel">
             <div class="content-wrapper">
                 <div class="row">
-                    <div class="col-lg-12 grid-margin stretch-card">
+                    <div class="col-lg-6 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Modifier régime</h4>
@@ -438,32 +438,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleSelectGender">Catégorie</label>
-                                        <select name="categorie" class="form-control" id="exampleSelectGender">
-                                            <option value="">Catégorie</option>
-                                            <?php if ($item->category == "Lipides") : ?>
-                                                <option value="Lipides" selected>Lipides</option>
-                                                <option value="Glucides">Glucides</option>
-                                                <option value="Proteines">Proteines</option>
-                                            <?php elseif ($item->category == "Glucides") : ?>
-                                                <option value="Lipides">Lipides</option>
-                                                <option value="Glucides" selected>Glucides</option>
-                                                <option value="Proteines">Proteines</option>
-                                            <?php else : ?>
-                                                <option value="Lipides">Lipides</option>
-                                                <option value="Glucides">Glucides</option>
-                                                <option value="Proteines" selected>Proteines</option>
-                                            <?php endif; ?>
-                                        </select>
+                                        <label for="exampleInputEmail1">Quantité</label>
+                                        <input type="number" name="quantite" class="form-control" id="exampleInputEmail1" placeholder="quantité" value="<?= $item->quantite ?>">
                                     </div>
                                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                     <button class="btn btn-light">Cancel</button>
-                                    <?php endforeach; ?>
-                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Details plat</h4>
+                                <p class="card-description">
+                                    Apport nutritionnel
+                                </p>
+                                <div class="form-group">
+                                    <label for="exampleInputUsername1">Lipides</label>
+                                    <input type="number" name="lipide" class="form-control" id="exampleInputUsername1" placeholder="%" value="<?= $item->lipide ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Glucides</label>
+                                    <input type="number" name="glucide" class="form-control" id="exampleInputEmail1" placeholder="%" value="<?= $item->glucide ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Protides</label>
+                                    <input type="number" name="protide" class="form-control" id="exampleInputEmail1" placeholder="%" value="<?= $item->protide ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Duree</label>
+                                    <input type="number" name="duree" class="form-control" id="exampleInputEmail1" placeholder="%" value="<?= $item->duree ?>">
+                                </div>
+                                </form>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
         <!-- partial:../../partials/_footer.html -->

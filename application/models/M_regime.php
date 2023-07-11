@@ -40,4 +40,35 @@ class M_regime extends CI_Model
         $this->db->where('id', $id);
         $this->db->update('aliment', $data);
     }
+
+    public function generer_regime($type)
+    {
+        $sql = "select * from aliment where type = '$type'";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+
+    public function inserer_regime_activite($data)
+    {
+        $this->db->insert('proposition_regime', $data);
+    }
+
+    public function inserer_regime_activite_imc($data)
+    {
+        $this->db->insert('proposition_regime_imc', $data);
+    }
+
+    public function liste_proposition_regime($id)
+    {
+        $sql = "select * from proposition_regime where user_id =" . $id . " and date = CURDATE()";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+
+    public function liste_proposition_regime_imc($id)
+    {
+        $sql = "select * from proposition_regime_imc where user_id =" . $id . " and date = CURDATE()";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
 }

@@ -406,12 +406,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="main-panel">
             <div class="content-wrapper">
                 <div class="row">
-                    <div class="col-lg-12 grid-margin stretch-card">
+                    <div class="col-lg-6 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Nouveau régime</h4>
                                 <p class="card-description">
-                                    Insertion par aliment
+                                    Insertion par plat
                                 </p>
                                 <form class="forms-sample" method="post" action="<?= site_url("/index.php/First/nouveau_aliment"); ?>">
                                     <div class="form-group">
@@ -431,22 +431,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleSelectGender">Catégorie</label>
-                                        <select name="categorie" class="form-control" id="exampleSelectGender">
-                                            <option value="">Catégorie</option>
-                                            <option value="Lipides">Lipides</option>
-                                            <option value="Glucides">Glucides</option>
-                                            <option value="Proteines">Proteines</option>
-                                        </select>
+                                        <label for="exampleInputEmail1">Quantité</label>
+                                        <input type="number" name="quantite" class="form-control" id="exampleInputEmail1" placeholder="quantité">
                                     </div>
                                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                     <button class="btn btn-light">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Details plat</h4>
+                                <p class="card-description">
+                                    Apport nutritionnel
+                                </p>
+                                    <div class="form-group">
+                                        <label for="exampleInputUsername1">Viande</label>
+                                        <input type="number" name="lipide" class="form-control" id="exampleInputUsername1" placeholder="%">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Poisson</label>
+                                        <input type="number" name="glucide" class="form-control" id="exampleInputEmail1" placeholder="%">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Volaille</label>
+                                        <input type="number" name="protide" class="form-control" id="exampleInputEmail1" placeholder="%">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Durée(+-500g)</label>
+                                        <input type="number" name="duree" class="form-control" id="exampleInputEmail1" placeholder="%">
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
